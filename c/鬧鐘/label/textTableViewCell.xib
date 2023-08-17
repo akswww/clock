@@ -16,22 +16,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btf-Vt-UHg">
-                        <rect key="frame" x="16" y="5" width="82" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btf-Vt-UHg">
+                        <rect key="frame" x="16" y="5" width="104" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="sMD-Jr-HQb"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUt-LU-E77">
-                        <rect key="frame" x="106" y="5" width="198" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUt-LU-E77">
+                        <rect key="frame" x="130" y="5" width="165" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="FEB-rs-8SB"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="wUt-LU-E77" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9qe-Uz-O9m"/>
+                    <constraint firstItem="btf-Vt-UHg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="KMt-al-u3b"/>
+                    <constraint firstItem="btf-Vt-UHg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="RzR-tY-70k"/>
+                    <constraint firstAttribute="bottom" secondItem="btf-Vt-UHg" secondAttribute="bottom" constant="5" id="fIC-w9-8sF"/>
+                    <constraint firstAttribute="trailing" secondItem="wUt-LU-E77" secondAttribute="trailing" constant="25" id="uyE-cc-ucs"/>
+                    <constraint firstAttribute="bottom" secondItem="wUt-LU-E77" secondAttribute="bottom" constant="5" id="w0H-Kg-48M"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="btf-Vt-UHg" secondAttribute="trailing" constant="200" id="8jf-wI-NAX"/>
+                <constraint firstItem="wUt-LU-E77" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="130" id="Wyi-uA-BXh"/>
+            </constraints>
             <connections>
                 <outlet property="textFld" destination="wUt-LU-E77" id="tTE-2Z-5RC"/>
                 <outlet property="textLbl" destination="btf-Vt-UHg" id="vN6-lG-gZi"/>

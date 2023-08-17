@@ -15,19 +15,20 @@ class dayViewController: UIViewController,UINavigationBarDelegate {
     var backButton: UIBarButtonItem?
     
     @IBOutlet weak var daytabel: UITableView!
+    
     var day:[String] = ["星期六","星期日","星期一","禮拜二","星期三","星期四","星期五"]
     var day1:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       setTableview()
+    }
+    
+    func setTableview() {
         daytabel.register(UINib(nibName: "showdayTableViewCell", bundle: nil), forCellReuseIdentifier: showdayTableViewCell.idfile)
         daytabel.dataSource = self
         daytabel.delegate = self
-        //        backButton = navigationItem(title: "back", style: .done, target: self, action: #selector(backClock))
-        //        navigationItem.leftBarButtonItem = backButton
-        
-        // Do any additional setup after loading the view.
     }
-    
     
     @objc func backClock(){
         dismiss(animated:true,completion: nil)
@@ -78,10 +79,6 @@ extension dayViewController: UITableViewDataSource, UITableViewDelegate {
             // 若未選擇過，則將該index加入陣列中
             self.isSelected.append(indexPath.row)
         }
-        
-        
-        //        daytabel.deselectRow(at: indexPath, animated: true)
-        //        day1.append(day[isSelected[indexPath.row]])
         
         daytabel.reloadRows(at: [indexPath], with: .automatic)
         updateData?.updateData(data: day[indexPath.row], nick: isSelected)

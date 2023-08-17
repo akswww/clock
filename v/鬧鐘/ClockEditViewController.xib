@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="clockeditViewController" customModule="clock" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClockEditViewController" customModule="clock" customModuleProvider="target">
             <connections>
                 <outlet property="choceTable" destination="K9f-dK-aVh" id="OLg-bU-WXB"/>
                 <outlet property="choceTime" destination="JMG-zY-Nln" id="AQG-gv-aT2"/>
@@ -20,18 +20,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-zY-Nln">
-                    <rect key="frame" x="12" y="177" width="382" height="162"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                </pickerView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-dK-aVh">
-                    <rect key="frame" x="20" y="368" width="374" height="494"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-dK-aVh">
+                    <rect key="frame" x="20" y="250" width="374" height="612"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="612" id="94s-KY-eKf"/>
+                    </constraints>
                 </tableView>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-zY-Nln">
+                    <rect key="frame" x="20" y="44" width="374" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="z2k-8z-Wqt"/>
+                    </constraints>
+                </pickerView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="K9f-dK-aVh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FSJ-oh-oxq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K9f-dK-aVh" secondAttribute="trailing" constant="20" id="LSb-mw-pgz"/>
+                <constraint firstItem="JMG-zY-Nln" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Oc0-bV-6m1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JMG-zY-Nln" secondAttribute="trailing" constant="20" id="PJ8-Km-CrE"/>
+                <constraint firstItem="K9f-dK-aVh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="PLy-Nh-Ypb"/>
+                <constraint firstItem="JMG-zY-Nln" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XUf-Pv-1yc"/>
+                <constraint firstItem="K9f-dK-aVh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="206" id="zfO-6V-TGI"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="64.955357142857139"/>
         </view>
     </objects>

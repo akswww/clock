@@ -8,6 +8,7 @@
 import UIKit
 
 class textTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var textFld: UITextField!
     @IBOutlet weak var textLbl: UILabel!
     static let idfile = "textTableViewCell"

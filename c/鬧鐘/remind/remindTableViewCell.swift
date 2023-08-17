@@ -8,8 +8,10 @@
 import UIKit
 
 class remindTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var remindLbl: UILabel!
     @IBOutlet weak var remindSth: UISwitch!
+    
     static let idfile = "remindTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()

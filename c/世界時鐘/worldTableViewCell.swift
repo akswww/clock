@@ -9,6 +9,8 @@ import UIKit
 
 class worldTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var worldLbl: UILabel!
+    static let idfile = "worldTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

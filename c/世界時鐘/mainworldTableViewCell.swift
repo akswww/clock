@@ -9,6 +9,10 @@ import UIKit
 
 class mainworldTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cityLbl: UILabel!
+    static let idfile = "mainworldTableViewCell"
+    @IBOutlet weak var gmtDifference: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

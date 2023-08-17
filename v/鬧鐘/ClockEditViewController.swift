@@ -1,5 +1,5 @@
 //
-//  clockeditViewController.swift
+//  ClockEditViewController.swift
 //  clock
 //
 //  Created by imac-1681 on 2023/7/16.
@@ -7,7 +7,7 @@
 
 import UIKit
 import RealmSwift
-class clockeditViewController: UIViewController, UINavigationBarDelegate {
+class ClockEditViewController: UIViewController, UINavigationBarDelegate {
 
     @IBOutlet weak var choceTime: UIPickerView!
     
@@ -47,10 +47,15 @@ class clockeditViewController: UIViewController, UINavigationBarDelegate {
 
     var tempStr:String = ""
     
+    var bb: Bool = false
+    
+    var test: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         choceTime.delegate = self
         choceTime.dataSource = self
+        print(hour_select)
         choceTime.selectRow(hour_select, inComponent: 0, animated: true)
         choceTime.selectRow(minute_select, inComponent: 1, animated: true)
         choceTime.reloadAllComponents()
@@ -65,6 +70,10 @@ class clockeditViewController: UIViewController, UINavigationBarDelegate {
         
         exitButton1 = UIBarButtonItem(title: "退出", style: .done, target: self, action: #selector(exitClock))
         navigationItem.leftBarButtonItem = exitButton1
+        choceTime.selectRow( ((time.time_shared.hour.count) * 1000) / 2, inComponent: 0, animated: false)
+        
+        
+        disKey()
         
     }
     
@@ -75,30 +84,48 @@ class clockeditViewController: UIViewController, UINavigationBarDelegate {
         
     }
     
+    func disKey(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBoard))
+        view.addGestureRecognizer(tap)
+        tap.cancelsTouchesInView = false
+    }
+   
+    @objc func dismissKeyBoard() {
+            self.view.endEditing(true)
+        }
+    
     @objc func addClock(){
         
         switch qq {
         case false:
             let realm = try! Realm()
-            let todo = RealmModel(hour: hour_select, min: minute_select, delTime: setTime(), swichStatus: true, delaySwich: true, whatMusic: musicf, whatDay: dayf, whattext: isText)
+            let nick1 = List<Int>()
+            nick1.append(objectsIn: nickf)
+            
+            let music = List<Int>()
+            music.append(objectsIn: seclectmusic)
+            let todo = RealmModel(hour: hour_select, min: minute_select, delTime: setTime(), swichStatus: true, delaySwich: true, whatMusic: musicf, whatDay: dayf, whattext: isText, nickff: nick1, selectMusic: music)
             
             try! realm.write {
                 realm.add(todo)
             }
             
 //            print("isText \(isText)")
-            updateAlarmLabelDelegate?.updateAlarmLabel(hour: hour_select, min: minute_select, delTime: todo.delTime, clockison: true ,whatText: isText,whatMusic: musicf,whatDay: dayf,delaySwich: true, nickff: nickf)
+            updateAlarmLabelDelegate?.updateAlarmLabel(hour: hour_select, min: minute_select, delTime: todo.delTime, clockison: true ,whatText: isText,whatMusic: musicf,whatDay: dayf,delaySwich: true, nickff: nickf, musicff: seclectmusic)
         case true:
             var f: [RealmModel] = []
             let realm = try! Realm()
             let todo = realm.objects(RealmModel.self)
             todo.forEach { item in
-                f.append(RealmModel(hour: item.hour, min: item.min, delTime: item.delTime, swichStatus: item.swichStatus,delaySwich: item.delaySwich,whatMusic: item.whatMusic,whatDay: item.whatDay,whattext: item.whattext))
+                f.append(RealmModel(hour: item.hour, min: item.min, delTime: item.delTime, swichStatus: item.swichStatus,delaySwich: item.delaySwich,whatMusic: item.whatMusic,whatDay: item.whatDay,whattext: item.whattext, nickff: item.nickff, selectMusic: item.selectMusic))
             }
-
+            let nick1 = List<Int>()
+            nick1.append(objectsIn: nickf)
             let predicate = NSPredicate(format: "delTime == \(getTime)")
             let dog = realm.objects(RealmModel.self).filter(predicate)
             
+            let music = List<Int>()
+            music.append(objectsIn: seclectmusic)
                        try! realm.write {
                            dog[0].hour = hour_select
                            dog[0].min = minute_select
@@ -106,12 +133,12 @@ class clockeditViewController: UIViewController, UINavigationBarDelegate {
                            dog[0].whatDay = dayf
                            dog[0].whattext = isText
                            dog[0].whatMusic = musicf
+                           dog[0].nickff = nick1
+                           dog[0].selectMusic = music
                        }
            
-            updateAlarmLabelDelegate?.updateAlarmLabel(hour: hour_select, min: minute_select, delTime: setTime() , clockison: true ,whatText: isText,whatMusic: musicf,whatDay: dayf,delaySwich: true, nickff: nickf)
+            updateAlarmLabelDelegate?.updateAlarmLabel(hour: hour_select, min: minute_select, delTime: setTime() , clockison: true ,whatText: isText,whatMusic: musicf,whatDay: dayf,delaySwich: true, nickff: nickf, musicff: seclectmusic)
             qq = false
-        default:
-            print("")
         }
         dismiss(animated:true,completion: nil)
     }
@@ -158,7 +185,7 @@ class clockeditViewController: UIViewController, UINavigationBarDelegate {
     
 }
 
-extension clockeditViewController : UIPickerViewDelegate,UIPickerViewDataSource {
+extension ClockEditViewController : UIPickerViewDelegate,UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2   //    回傳行直列數
@@ -166,43 +193,57 @@ extension clockeditViewController : UIPickerViewDelegate,UIPickerViewDataSource 
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0 {
-            return time.time_shared.hour.count
+            return (time.time_shared.hour.count) * 100
         } else {
-            return time.time_shared.minute.count
+            return (time.time_shared.minute.count) * 1000
         }
     }             //回傳每一直列的行列數（component 指的是選到哪個直列）
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
        
         if component == 0 {
-            if time.time_shared.hour[row] < 10 {
-                return "0\(time.time_shared.hour[row])"
+            if time.time_shared.hour[row % time.time_shared.hour.count] < 10 {
+                return "0\(time.time_shared.hour[row % time.time_shared.hour.count])"
             } else {
-                return "\(time.time_shared.hour[row])"
+                return "\(time.time_shared.hour[row % time.time_shared.hour.count])"
             }
+            
         } else {
-            if time.time_shared.minute[row] < 10 {
-                return "0\(time.time_shared.minute[row])"
+            if time.time_shared.minute[row % time.time_shared.minute.count] < 10 {
+                return "0\(time.time_shared.minute[row % time.time_shared.minute.count])"
             } else {
-                return "\(time.time_shared.minute[row])"
+                return "\(time.time_shared.minute[row % time.time_shared.minute.count])"
             }
         }
-    }                 //顯示每一行列給的值（如果是個位數，前面補 0）
-    
+    }
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        return 100
+        
+    }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0 {
-            self.hour_select = time.time_shared.hour[row]
+            
+            let position1 = ((time.time_shared.hour.count) * 100) / 2 + row % time.time_shared.hour.count
+               choceTime.selectRow(position1, inComponent: 0, animated: false)
+            
+            self.hour_select = time.time_shared.hour[row % time.time_shared.hour.count]
         } else if component == 1 {
-            self.minute_select = time.time_shared.minute[row]
+            
+            let position = ((time.time_shared.minute.count) * 1000) / 2 + row % time.time_shared.minute.count
+               choceTime.selectRow(position, inComponent: 1, animated: false)
+            
+            self.minute_select = time.time_shared.minute[row % time.time_shared.minute.count]
         }
+        
+          
     }          //將選取的值放到 hour_select 變數和 minute_select變數
 }
 
 protocol UpdateAlarmLabelDelegate: AnyObject {
-    func updateAlarmLabel(hour:Int, min:Int, delTime:Int,clockison:Bool,whatText:String,whatMusic:String,whatDay:String,delaySwich:Bool, nickff: [Int])
+    func updateAlarmLabel(hour:Int, min:Int, delTime:Int,clockison:Bool,whatText:String,whatMusic:String,whatDay:String,delaySwich:Bool, nickff: [Int] , musicff: [Int])
 }
 
-extension clockeditViewController: UITableViewDataSource, UITableViewDelegate {
+extension ClockEditViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         section1  = section
         return 4
@@ -217,32 +258,37 @@ extension clockeditViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         } else  if indexPath.row == 1{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: textTableViewCell.idfile, for: indexPath) as? textTableViewCell else{ return UITableViewCell() }
-            cell.textLbl.text = "標籤"
             
+            
+            
+            cell.textLbl.text = "標籤"
             var f: [RealmModel] = []
             let realm = try! Realm()
             let todo = realm.objects(RealmModel.self)
             todo.forEach { item in
-                f.append(RealmModel(hour: item.hour, min: item.min, delTime: item.delTime, swichStatus: item.swichStatus,delaySwich: item.delaySwich,whatMusic: item.whatMusic,whatDay: item.whatDay,whattext: item.whattext))
+                f.append(RealmModel(hour: item.hour, min: item.min, delTime: item.delTime, swichStatus: item.swichStatus,delaySwich: item.delaySwich,whatMusic: item.whatMusic,whatDay: item.whatDay,whattext: item.whattext, nickff: item.nickff, selectMusic: item.selectMusic))
             }
-
-     
             
-            switch qq {
+     
+            cell.textFld.delegate = self
+            switch bb {
             case false:
-                cell.textFld.text = "鬧鐘"
-                isText = "鬧鐘"
+                if (cell.textFld.text == "") {
+                    cell.textFld.text = "鬧鐘"
+                    isText = "鬧鐘"
+                    
+                }
+
             case true:
                 cell.textFld.text = isText
-            default:
-                print("")
-                
+
             }
-            cell.textFld.delegate = self
             
+          
             return cell
         } else if indexPath.row  == 2{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: dataTableViewCell.idfile, for: indexPath) as? dataTableViewCell else{ return UITableViewCell() }
+        
             cell.repectLbl.text = "提示聲"
             cell.showdata.text = musicf
             return cell
@@ -254,12 +300,8 @@ extension clockeditViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
-//        let todataedit = dayViewController()
-//        todataedit.updateData = self
-//        let updata = UINavigationController(rootViewController: todataedit)
-        
         if indexPath.row == 0 {
+            
             let todataedit = dayViewController()
             todataedit.updateData = self
             let newBackButton = UIBarButtonItem()
@@ -267,10 +309,11 @@ extension clockeditViewController: UITableViewDataSource, UITableViewDelegate {
             todataedit.isSelected = nickf
             navigationItem.backBarButtonItem = newBackButton
             navigationController?.pushViewController(todataedit, animated: true)
-//            present(todataedit, animated: true, completion: nil)
+            
         } else if indexPath.row == 1 {
-//            present(jumppage, animated: true, completion: nil)
+            
         } else if indexPath.row == 2{
+            
             let tomusic = musicViewController()
             tomusic.upmusic = self
             let newBackButton = UIBarButtonItem()
@@ -278,38 +321,28 @@ extension clockeditViewController: UITableViewDataSource, UITableViewDelegate {
             tomusic.seclect = seclectmusic
             navigationItem.backBarButtonItem = newBackButton
             navigationController?.pushViewController(tomusic, animated: true)
-//            present(tomusic, animated: true, completion: nil)
+            
         } else {
             let toremind = remindTableViewCell()
             toremind.remindSth.addTarget(self, action: #selector(stateSwitch), for: .touchUpInside)
+            
         }
     }
-    
 
-    
 }
 
-extension clockeditViewController: updateData{
+extension ClockEditViewController: updateData{
     func updateData(data: String, nick: [Int]) {
-
-        var newArray: [Int] = []
-        for i in nick {
-            if newArray.contains(i) {
-                continue
-            }
-            newArray.append(i)
-        }
         
         dayf = ""
-        for i in newArray{
+        for i in nick{
             dayf.append(dataf[i])
         }
         nickf = nick
-//        print(nick)
         choceTable.reloadData()
     }
 }
-extension clockeditViewController: upmusic {
+extension ClockEditViewController: upmusic {
     func upmusic(music: String, seclect1: [Int]) {
         seclectmusic = seclect1
         musicf = ""
@@ -318,13 +351,10 @@ extension clockeditViewController: upmusic {
         }
         choceTable.reloadData()
     }
-    
-   
-    
-    
+
 }
 
-extension clockeditViewController: UITextFieldDelegate {
+extension ClockEditViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         

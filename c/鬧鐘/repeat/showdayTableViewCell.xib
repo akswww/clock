@@ -16,14 +16,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtm-Qx-5yi">
-                        <rect key="frame" x="16" y="12" width="288" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtm-Qx-5yi">
+                        <rect key="frame" x="16" y="0.0" width="288" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="IWs-CP-cGK"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rtm-Qx-5yi" secondAttribute="bottom" id="L5Z-mb-TEf"/>
+                    <constraint firstAttribute="trailing" secondItem="rtm-Qx-5yi" secondAttribute="trailing" constant="16" id="MCD-gM-Wmr"/>
+                    <constraint firstItem="rtm-Qx-5yi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fMR-UR-H59"/>
+                    <constraint firstItem="rtm-Qx-5yi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="p3C-R4-MiJ"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

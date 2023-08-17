@@ -7,15 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62A3A376C458E00E69110B4A /* Pods_clock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60618C9CDDDD1DE4753CEB0F /* Pods_clock.framework */; };
+		747241244438DC231632A0BB /* Pods_clockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F37F0680E1DDB382048442F /* Pods_clockTests.framework */; };
+		7A09CC572A63E1CD0021A9DE /* clockmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A09CC562A63E1CD0021A9DE /* clockmodel.swift */; };
+		7A09CC5A2A63E5950021A9DE /* ClockEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A09CC582A63E5950021A9DE /* ClockEditViewController.swift */; };
+		7A09CC5B2A63E5950021A9DE /* ClockEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A09CC592A63E5950021A9DE /* ClockEditViewController.xib */; };
+		7A1A35112A736FEA00AA5072 /* secondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A350F2A736FEA00AA5072 /* secondsViewController.swift */; };
+		7A1A35122A736FEA00AA5072 /* secondsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1A35102A736FEA00AA5072 /* secondsViewController.xib */; };
+		7A35312C2A77A22200158737 /* mainworldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35312A2A77A22200158737 /* mainworldTableViewCell.swift */; };
+		7A35312D2A77A22200158737 /* mainworldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A35312B2A77A22200158737 /* mainworldTableViewCell.xib */; };
+		7A3531312A78EC8700158737 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A35312F2A78EC8700158737 /* timerViewController.swift */; };
+		7A3531322A78EC8700158737 /* timerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A3531302A78EC8700158737 /* timerViewController.xib */; };
+		7A46DFB32A6AAB2E001D0EE6 /* textTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46DFB12A6AAB2E001D0EE6 /* textTableViewCell.swift */; };
+		7A46DFB42A6AAB2E001D0EE6 /* textTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A46DFB22A6AAB2E001D0EE6 /* textTableViewCell.xib */; };
+		7A46DFB72A6AADFD001D0EE6 /* remindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46DFB52A6AADFD001D0EE6 /* remindTableViewCell.swift */; };
+		7A46DFB82A6AADFD001D0EE6 /* remindTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A46DFB62A6AADFD001D0EE6 /* remindTableViewCell.xib */; };
+		7A5007D12A7265AA00B3CCDC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5007CF2A7265AA00B3CCDC /* TabBarViewController.swift */; };
+		7A5007D22A7265AA00B3CCDC /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5007D02A7265AA00B3CCDC /* TabBarViewController.xib */; };
+		7AD26E452A6915EE00C1730B /* ClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD26E432A6915EE00C1730B /* ClockTableViewCell.swift */; };
+		7AD26E462A6915EE00C1730B /* ClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD26E442A6915EE00C1730B /* ClockTableViewCell.xib */; };
+		7AD26E492A6935E400C1730B /* dataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD26E472A6935E400C1730B /* dataTableViewCell.swift */; };
+		7AD26E4A2A6935E400C1730B /* dataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD26E482A6935E400C1730B /* dataTableViewCell.xib */; };
+		7AD26E552A694AA900C1730B /* dayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD26E532A694AA900C1730B /* dayViewController.swift */; };
+		7AD26E562A694AA900C1730B /* dayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD26E542A694AA900C1730B /* dayViewController.xib */; };
 		7AD5160A2A638598009F83E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD516092A638598009F83E2 /* AppDelegate.swift */; };
 		7AD5160C2A638598009F83E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5160B2A638598009F83E2 /* SceneDelegate.swift */; };
-		7AD5160E2A638598009F83E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5160D2A638598009F83E2 /* ViewController.swift */; };
-		7AD516112A638598009F83E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5160F2A638598009F83E2 /* Main.storyboard */; };
 		7AD516132A63859A009F83E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD516122A63859A009F83E2 /* Assets.xcassets */; };
 		7AD516162A63859A009F83E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD516142A63859A009F83E2 /* LaunchScreen.storyboard */; };
 		7AD516212A63859A009F83E2 /* clockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD516202A63859A009F83E2 /* clockTests.swift */; };
 		7AD5162B2A63859A009F83E2 /* clockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5162A2A63859A009F83E2 /* clockUITests.swift */; };
 		7AD5162D2A63859A009F83E2 /* clockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5162C2A63859A009F83E2 /* clockUITestsLaunchTests.swift */; };
+		7AD5163D2A6385FF009F83E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5163B2A6385FF009F83E2 /* ViewController.swift */; };
+		7AD5163E2A6385FF009F83E2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5163C2A6385FF009F83E2 /* ViewController.xib */; };
+		7AD516442A6387B8009F83E2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD516422A6387B8009F83E2 /* TableViewCell.swift */; };
+		7AD516452A6387B8009F83E2 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD516432A6387B8009F83E2 /* TableViewCell.xib */; };
+		7AEADCCA2A6A54B500369022 /* showdayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEADCC82A6A54B500369022 /* showdayTableViewCell.swift */; };
+		7AEADCCB2A6A54B500369022 /* showdayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AEADCC92A6A54B500369022 /* showdayTableViewCell.xib */; };
+		7AEADCD22A6A67FC00369022 /* musicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEADCD02A6A67FC00369022 /* musicTableViewCell.swift */; };
+		7AEADCD32A6A67FC00369022 /* musicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AEADCD12A6A67FC00369022 /* musicTableViewCell.xib */; };
+		7AEADCDE2A6A69B800369022 /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEADCDC2A6A69B800369022 /* musicViewController.swift */; };
+		7AEADCDF2A6A69B800369022 /* musicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AEADCDD2A6A69B800369022 /* musicViewController.xib */; };
+		7AF826592A738B3600073CE5 /* seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF826582A738B3600073CE5 /* seconds.swift */; };
+		7AF8265B2A73B2F500073CE5 /* UserPerferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8265A2A73B2F500073CE5 /* UserPerferences.swift */; };
+		7AF8265F2A777E0700073CE5 /* worldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8265D2A777E0700073CE5 /* worldViewController.swift */; };
+		7AF826602A777E0700073CE5 /* worldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF8265E2A777E0700073CE5 /* worldViewController.xib */; };
+		7AF826632A77816600073CE5 /* worldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF826612A77816600073CE5 /* worldTableViewCell.swift */; };
+		7AF826642A77816600073CE5 /* worldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF826622A77816600073CE5 /* worldTableViewCell.xib */; };
+		7AF826672A778D6100073CE5 /* mainworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF826652A778D6100073CE5 /* mainworldViewController.swift */; };
+		7AF826682A778D6100073CE5 /* mainworldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF826662A778D6100073CE5 /* mainworldViewController.xib */; };
+		B49F0576DD89F53F7D005E18 /* Pods_clock_clockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE61031E1B3E8176AA3AB62 /* Pods_clock_clockUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +76,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FD897CF8379D3B64A613820 /* Pods-clock-clockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clock-clockUITests.release.xcconfig"; path = "Target Support Files/Pods-clock-clockUITests/Pods-clock-clockUITests.release.xcconfig"; sourceTree = "<group>"; };
+		276CD09F5A7265F745744E4E /* Pods-clockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clockTests.debug.xcconfig"; path = "Target Support Files/Pods-clockTests/Pods-clockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C61536E63D4F1B89EDF1B8A /* Pods-clock-clockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clock-clockUITests.debug.xcconfig"; path = "Target Support Files/Pods-clock-clockUITests/Pods-clock-clockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F37F0680E1DDB382048442F /* Pods_clockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60618C9CDDDD1DE4753CEB0F /* Pods_clock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE61031E1B3E8176AA3AB62 /* Pods_clock_clockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clock_clockUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F3F2052465B42B59869C78 /* Pods-clock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clock.debug.xcconfig"; path = "Target Support Files/Pods-clock/Pods-clock.debug.xcconfig"; sourceTree = "<group>"; };
+		7A09CC562A63E1CD0021A9DE /* clockmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockmodel.swift; sourceTree = "<group>"; };
+		7A09CC582A63E5950021A9DE /* ClockEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockEditViewController.swift; sourceTree = "<group>"; };
+		7A09CC592A63E5950021A9DE /* ClockEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockEditViewController.xib; sourceTree = "<group>"; };
+		7A1A350F2A736FEA00AA5072 /* secondsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondsViewController.swift; sourceTree = "<group>"; };
+		7A1A35102A736FEA00AA5072 /* secondsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = secondsViewController.xib; sourceTree = "<group>"; };
+		7A35312A2A77A22200158737 /* mainworldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainworldTableViewCell.swift; sourceTree = "<group>"; };
+		7A35312B2A77A22200158737 /* mainworldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainworldTableViewCell.xib; sourceTree = "<group>"; };
+		7A35312F2A78EC8700158737 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
+		7A3531302A78EC8700158737 /* timerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timerViewController.xib; sourceTree = "<group>"; };
+		7A46DFB12A6AAB2E001D0EE6 /* textTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textTableViewCell.swift; sourceTree = "<group>"; };
+		7A46DFB22A6AAB2E001D0EE6 /* textTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = textTableViewCell.xib; sourceTree = "<group>"; };
+		7A46DFB52A6AADFD001D0EE6 /* remindTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remindTableViewCell.swift; sourceTree = "<group>"; };
+		7A46DFB62A6AADFD001D0EE6 /* remindTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = remindTableViewCell.xib; sourceTree = "<group>"; };
+		7A5007CF2A7265AA00B3CCDC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7A5007D02A7265AA00B3CCDC /* TabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		7AD26E432A6915EE00C1730B /* ClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTableViewCell.swift; sourceTree = "<group>"; };
+		7AD26E442A6915EE00C1730B /* ClockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockTableViewCell.xib; sourceTree = "<group>"; };
+		7AD26E472A6935E400C1730B /* dataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTableViewCell.swift; sourceTree = "<group>"; };
+		7AD26E482A6935E400C1730B /* dataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dataTableViewCell.xib; sourceTree = "<group>"; };
+		7AD26E532A694AA900C1730B /* dayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayViewController.swift; sourceTree = "<group>"; };
+		7AD26E542A694AA900C1730B /* dayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dayViewController.xib; sourceTree = "<group>"; };
 		7AD516062A638598009F83E2 /* clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD516092A638598009F83E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AD5160B2A638598009F83E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AD5160D2A638598009F83E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7AD516102A638598009F83E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AD516122A63859A009F83E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD516152A63859A009F83E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AD516172A63859A009F83E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +115,26 @@
 		7AD516262A63859A009F83E2 /* clockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD5162A2A63859A009F83E2 /* clockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockUITests.swift; sourceTree = "<group>"; };
 		7AD5162C2A63859A009F83E2 /* clockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AD5163B2A6385FF009F83E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AD5163C2A6385FF009F83E2 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		7AD516422A6387B8009F83E2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7AD516432A6387B8009F83E2 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		7AEADCC82A6A54B500369022 /* showdayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showdayTableViewCell.swift; sourceTree = "<group>"; };
+		7AEADCC92A6A54B500369022 /* showdayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = showdayTableViewCell.xib; sourceTree = "<group>"; };
+		7AEADCD02A6A67FC00369022 /* musicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicTableViewCell.swift; sourceTree = "<group>"; };
+		7AEADCD12A6A67FC00369022 /* musicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = musicTableViewCell.xib; sourceTree = "<group>"; };
+		7AEADCDC2A6A69B800369022 /* musicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
+		7AEADCDD2A6A69B800369022 /* musicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = musicViewController.xib; sourceTree = "<group>"; };
+		7AF826582A738B3600073CE5 /* seconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seconds.swift; sourceTree = "<group>"; };
+		7AF8265A2A73B2F500073CE5 /* UserPerferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPerferences.swift; sourceTree = "<group>"; };
+		7AF8265D2A777E0700073CE5 /* worldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worldViewController.swift; sourceTree = "<group>"; };
+		7AF8265E2A777E0700073CE5 /* worldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = worldViewController.xib; sourceTree = "<group>"; };
+		7AF826612A77816600073CE5 /* worldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = worldTableViewCell.swift; sourceTree = "<group>"; };
+		7AF826622A77816600073CE5 /* worldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = worldTableViewCell.xib; sourceTree = "<group>"; };
+		7AF826652A778D6100073CE5 /* mainworldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainworldViewController.swift; sourceTree = "<group>"; };
+		7AF826662A778D6100073CE5 /* mainworldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainworldViewController.xib; sourceTree = "<group>"; };
+		8959AC5634733CBF99E59B48 /* Pods-clockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clockTests.release.xcconfig"; path = "Target Support Files/Pods-clockTests/Pods-clockTests.release.xcconfig"; sourceTree = "<group>"; };
+		F569B82E803397D7EDD9CC9E /* Pods-clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clock.release.xcconfig"; path = "Target Support Files/Pods-clock/Pods-clock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A3A376C458E00E69110B4A /* Pods_clock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747241244438DC231632A0BB /* Pods_clockTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +158,136 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49F0576DD89F53F7D005E18 /* Pods_clock_clockUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BE64CDC2207DB719E6E3356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60618C9CDDDD1DE4753CEB0F /* Pods_clock.framework */,
+				6CE61031E1B3E8176AA3AB62 /* Pods_clock_clockUITests.framework */,
+				4F37F0680E1DDB382048442F /* Pods_clockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A1FF7EE2A70CAE00056AE6B /* repeat */ = {
+			isa = PBXGroup;
+			children = (
+				7AD26E472A6935E400C1730B /* dataTableViewCell.swift */,
+				7AD26E482A6935E400C1730B /* dataTableViewCell.xib */,
+				7AD26E532A694AA900C1730B /* dayViewController.swift */,
+				7AD26E542A694AA900C1730B /* dayViewController.xib */,
+				7AEADCC82A6A54B500369022 /* showdayTableViewCell.swift */,
+				7AEADCC92A6A54B500369022 /* showdayTableViewCell.xib */,
+			);
+			path = repeat;
+			sourceTree = "<group>";
+		};
+		7A1FF7EF2A70CB1F0056AE6B /* label */ = {
+			isa = PBXGroup;
+			children = (
+				7A46DFB12A6AAB2E001D0EE6 /* textTableViewCell.swift */,
+				7A46DFB22A6AAB2E001D0EE6 /* textTableViewCell.xib */,
+			);
+			path = label;
+			sourceTree = "<group>";
+		};
+		7A1FF7F02A70CB530056AE6B /* remind */ = {
+			isa = PBXGroup;
+			children = (
+				7A46DFB52A6AADFD001D0EE6 /* remindTableViewCell.swift */,
+				7A46DFB62A6AADFD001D0EE6 /* remindTableViewCell.xib */,
+			);
+			path = remind;
+			sourceTree = "<group>";
+		};
+		7A1FF7F12A70CB760056AE6B /* music */ = {
+			isa = PBXGroup;
+			children = (
+				7AEADCD02A6A67FC00369022 /* musicTableViewCell.swift */,
+				7AEADCD12A6A67FC00369022 /* musicTableViewCell.xib */,
+				7AEADCDC2A6A69B800369022 /* musicViewController.swift */,
+				7AEADCDD2A6A69B800369022 /* musicViewController.xib */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		7A35312E2A78E68400158737 /* 計時器 */ = {
+			isa = PBXGroup;
+			children = (
+				7A35312F2A78EC8700158737 /* timerViewController.swift */,
+				7A3531302A78EC8700158737 /* timerViewController.xib */,
+			);
+			path = "計時器";
+			sourceTree = "<group>";
+		};
+		7A5007CB2A72641700B3CCDC /* 鬧鐘 */ = {
+			isa = PBXGroup;
+			children = (
+				7A8A929A2A80C62F00017223 /* Component */,
+				7A1FF7F12A70CB760056AE6B /* music */,
+				7A1FF7F02A70CB530056AE6B /* remind */,
+				7A1FF7EF2A70CB1F0056AE6B /* label */,
+				7A1FF7EE2A70CAE00056AE6B /* repeat */,
+			);
+			path = "鬧鐘";
+			sourceTree = "<group>";
+		};
+		7A5007CC2A72643400B3CCDC /* 鬧鐘 */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5163B2A6385FF009F83E2 /* ViewController.swift */,
+				7AD5163C2A6385FF009F83E2 /* ViewController.xib */,
+				7A09CC582A63E5950021A9DE /* ClockEditViewController.swift */,
+				7A09CC592A63E5950021A9DE /* ClockEditViewController.xib */,
+			);
+			path = "鬧鐘";
+			sourceTree = "<group>";
+		};
+		7A5007CD2A72644600B3CCDC /* 麻表 */ = {
+			isa = PBXGroup;
+			children = (
+				7A1A350F2A736FEA00AA5072 /* secondsViewController.swift */,
+				7A1A35102A736FEA00AA5072 /* secondsViewController.xib */,
+			);
+			path = "麻表";
+			sourceTree = "<group>";
+		};
+		7A5007CE2A72645500B3CCDC /* 麻表 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "麻表";
+			sourceTree = "<group>";
+		};
+		7A8A929A2A80C62F00017223 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7AD516422A6387B8009F83E2 /* TableViewCell.swift */,
+				7AD516432A6387B8009F83E2 /* TableViewCell.xib */,
+				7AD26E432A6915EE00C1730B /* ClockTableViewCell.swift */,
+				7AD26E442A6915EE00C1730B /* ClockTableViewCell.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		7AD515FD2A638598009F83E2 = {
 			isa = PBXGroup;
 			children = (
+				7AD516412A6386BE009F83E2 /* c */,
+				7AD516402A6386BA009F83E2 /* v */,
+				7AD5163F2A6386B2009F83E2 /* m */,
 				7AD516082A638598009F83E2 /* clock */,
 				7AD5161F2A63859A009F83E2 /* clockTests */,
 				7AD516292A63859A009F83E2 /* clockUITests */,
 				7AD516072A638598009F83E2 /* Products */,
+				EC1547E54423BC15325CF0BC /* Pods */,
+				0BE64CDC2207DB719E6E3356 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +306,6 @@
 			children = (
 				7AD516092A638598009F83E2 /* AppDelegate.swift */,
 				7AD5160B2A638598009F83E2 /* SceneDelegate.swift */,
-				7AD5160D2A638598009F83E2 /* ViewController.swift */,
-				7AD5160F2A638598009F83E2 /* Main.storyboard */,
 				7AD516122A63859A009F83E2 /* Assets.xcassets */,
 				7AD516142A63859A009F83E2 /* LaunchScreen.storyboard */,
 				7AD516172A63859A009F83E2 /* Info.plist */,
@@ -127,6 +330,66 @@
 			path = clockUITests;
 			sourceTree = "<group>";
 		};
+		7AD5163F2A6386B2009F83E2 /* m */ = {
+			isa = PBXGroup;
+			children = (
+				7AF826582A738B3600073CE5 /* seconds.swift */,
+				7A09CC562A63E1CD0021A9DE /* clockmodel.swift */,
+				7A5007CF2A7265AA00B3CCDC /* TabBarViewController.swift */,
+				7A5007D02A7265AA00B3CCDC /* TabBarViewController.xib */,
+				7AF8265A2A73B2F500073CE5 /* UserPerferences.swift */,
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
+		7AD516402A6386BA009F83E2 /* v */ = {
+			isa = PBXGroup;
+			children = (
+				7A5007CE2A72645500B3CCDC /* 麻表 */,
+				7A5007CC2A72643400B3CCDC /* 鬧鐘 */,
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		7AD516412A6386BE009F83E2 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				7A35312E2A78E68400158737 /* 計時器 */,
+				7AF8265C2A777DE900073CE5 /* 世界時鐘 */,
+				7A5007CD2A72644600B3CCDC /* 麻表 */,
+				7A5007CB2A72641700B3CCDC /* 鬧鐘 */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		7AF8265C2A777DE900073CE5 /* 世界時鐘 */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8265D2A777E0700073CE5 /* worldViewController.swift */,
+				7AF8265E2A777E0700073CE5 /* worldViewController.xib */,
+				7AF826612A77816600073CE5 /* worldTableViewCell.swift */,
+				7AF826622A77816600073CE5 /* worldTableViewCell.xib */,
+				7AF826652A778D6100073CE5 /* mainworldViewController.swift */,
+				7AF826662A778D6100073CE5 /* mainworldViewController.xib */,
+				7A35312A2A77A22200158737 /* mainworldTableViewCell.swift */,
+				7A35312B2A77A22200158737 /* mainworldTableViewCell.xib */,
+			);
+			path = "世界時鐘";
+			sourceTree = "<group>";
+		};
+		EC1547E54423BC15325CF0BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78F3F2052465B42B59869C78 /* Pods-clock.debug.xcconfig */,
+				F569B82E803397D7EDD9CC9E /* Pods-clock.release.xcconfig */,
+				3C61536E63D4F1B89EDF1B8A /* Pods-clock-clockUITests.debug.xcconfig */,
+				1FD897CF8379D3B64A613820 /* Pods-clock-clockUITests.release.xcconfig */,
+				276CD09F5A7265F745744E4E /* Pods-clockTests.debug.xcconfig */,
+				8959AC5634733CBF99E59B48 /* Pods-clockTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AD516302A63859A009F83E2 /* Build configuration list for PBXNativeTarget "clock" */;
 			buildPhases = (
+				90E804F25540262A44CDF4E0 /* [CP] Check Pods Manifest.lock */,
 				7AD516022A638598009F83E2 /* Sources */,
 				7AD516032A638598009F83E2 /* Frameworks */,
 				7AD516042A638598009F83E2 /* Resources */,
+				5C12FB414B8F9106987221F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +416,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AD516332A63859A009F83E2 /* Build configuration list for PBXNativeTarget "clockTests" */;
 			buildPhases = (
+				BA49F8E369F0A7819AAAB979 /* [CP] Check Pods Manifest.lock */,
 				7AD516182A63859A009F83E2 /* Sources */,
 				7AD516192A63859A009F83E2 /* Frameworks */,
 				7AD5161A2A63859A009F83E2 /* Resources */,
@@ -169,9 +435,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AD516362A63859A009F83E2 /* Build configuration list for PBXNativeTarget "clockUITests" */;
 			buildPhases = (
+				059593F68319DC7B91FFA665 /* [CP] Check Pods Manifest.lock */,
 				7AD516222A63859A009F83E2 /* Sources */,
 				7AD516232A63859A009F83E2 /* Frameworks */,
 				7AD516242A63859A009F83E2 /* Resources */,
+				B102DB027379B0C457A93E32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +499,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3531322A78EC8700158737 /* timerViewController.xib in Resources */,
+				7AD26E462A6915EE00C1730B /* ClockTableViewCell.xib in Resources */,
+				7AF826642A77816600073CE5 /* worldTableViewCell.xib in Resources */,
+				7A35312D2A77A22200158737 /* mainworldTableViewCell.xib in Resources */,
+				7AEADCD32A6A67FC00369022 /* musicTableViewCell.xib in Resources */,
 				7AD516162A63859A009F83E2 /* LaunchScreen.storyboard in Resources */,
+				7AD516452A6387B8009F83E2 /* TableViewCell.xib in Resources */,
+				7A5007D22A7265AA00B3CCDC /* TabBarViewController.xib in Resources */,
+				7A1A35122A736FEA00AA5072 /* secondsViewController.xib in Resources */,
+				7AD26E562A694AA900C1730B /* dayViewController.xib in Resources */,
+				7AF826682A778D6100073CE5 /* mainworldViewController.xib in Resources */,
+				7AEADCDF2A6A69B800369022 /* musicViewController.xib in Resources */,
+				7AD5163E2A6385FF009F83E2 /* ViewController.xib in Resources */,
+				7AEADCCB2A6A54B500369022 /* showdayTableViewCell.xib in Resources */,
+				7A46DFB82A6AADFD001D0EE6 /* remindTableViewCell.xib in Resources */,
 				7AD516132A63859A009F83E2 /* Assets.xcassets in Resources */,
-				7AD516112A638598009F83E2 /* Main.storyboard in Resources */,
+				7A09CC5B2A63E5950021A9DE /* ClockEditViewController.xib in Resources */,
+				7A46DFB42A6AAB2E001D0EE6 /* textTableViewCell.xib in Resources */,
+				7AD26E4A2A6935E400C1730B /* dataTableViewCell.xib in Resources */,
+				7AF826602A777E0700073CE5 /* worldViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +538,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		059593F68319DC7B91FFA665 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-clock-clockUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C12FB414B8F9106987221F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-clock/Pods-clock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-clock/Pods-clock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-clock/Pods-clock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E804F25540262A44CDF4E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-clock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B102DB027379B0C457A93E32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-clock-clockUITests/Pods-clock-clockUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-clock-clockUITests/Pods-clock-clockUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-clock-clockUITests/Pods-clock-clockUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA49F8E369F0A7819AAAB979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-clockTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AD516022A638598009F83E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD5160E2A638598009F83E2 /* ViewController.swift in Sources */,
+				7AF826672A778D6100073CE5 /* mainworldViewController.swift in Sources */,
+				7AD26E452A6915EE00C1730B /* ClockTableViewCell.swift in Sources */,
+				7AD26E552A694AA900C1730B /* dayViewController.swift in Sources */,
+				7AD5163D2A6385FF009F83E2 /* ViewController.swift in Sources */,
+				7AD516442A6387B8009F83E2 /* TableViewCell.swift in Sources */,
+				7AF826592A738B3600073CE5 /* seconds.swift in Sources */,
+				7A1A35112A736FEA00AA5072 /* secondsViewController.swift in Sources */,
+				7A09CC572A63E1CD0021A9DE /* clockmodel.swift in Sources */,
+				7AEADCCA2A6A54B500369022 /* showdayTableViewCell.swift in Sources */,
+				7AEADCD22A6A67FC00369022 /* musicTableViewCell.swift in Sources */,
+				7AF8265B2A73B2F500073CE5 /* UserPerferences.swift in Sources */,
 				7AD5160A2A638598009F83E2 /* AppDelegate.swift in Sources */,
+				7AEADCDE2A6A69B800369022 /* musicViewController.swift in Sources */,
+				7AF8265F2A777E0700073CE5 /* worldViewController.swift in Sources */,
+				7A46DFB32A6AAB2E001D0EE6 /* textTableViewCell.swift in Sources */,
+				7A3531312A78EC8700158737 /* timerViewController.swift in Sources */,
+				7A35312C2A77A22200158737 /* mainworldTableViewCell.swift in Sources */,
+				7AF826632A77816600073CE5 /* worldTableViewCell.swift in Sources */,
+				7A46DFB72A6AADFD001D0EE6 /* remindTableViewCell.swift in Sources */,
 				7AD5160C2A638598009F83E2 /* SceneDelegate.swift in Sources */,
+				7A09CC5A2A63E5950021A9DE /* ClockEditViewController.swift in Sources */,
+				7A5007D12A7265AA00B3CCDC /* TabBarViewController.swift in Sources */,
+				7AD26E492A6935E400C1730B /* dataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +705,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7AD5160F2A638598009F83E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AD516102A638598009F83E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7AD516142A63859A009F83E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +834,7 @@
 		};
 		7AD516312A63859A009F83E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F3F2052465B42B59869C78 /* Pods-clock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,7 +845,6 @@
 				INFOPLIST_FILE = clock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +862,7 @@
 		};
 		7AD516322A63859A009F83E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F569B82E803397D7EDD9CC9E /* Pods-clock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +873,6 @@
 				INFOPLIST_FILE = clock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +890,7 @@
 		};
 		7AD516342A63859A009F83E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276CD09F5A7265F745744E4E /* Pods-clockTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +911,7 @@
 		};
 		7AD516352A63859A009F83E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8959AC5634733CBF99E59B48 /* Pods-clockTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +932,7 @@
 		};
 		7AD516372A63859A009F83E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C61536E63D4F1B89EDF1B8A /* Pods-clock-clockUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +951,7 @@
 		};
 		7AD516382A63859A009F83E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD897CF8379D3B64A613820 /* Pods-clock-clockUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -16,20 +16,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3L-MH-HQc">
-                        <rect key="frame" x="16" y="7" width="92" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3L-MH-HQc">
+                        <rect key="frame" x="16" y="7" width="74" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="aLH-Nx-vOt"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-Fg-mge">
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-Fg-mge">
                         <rect key="frame" x="257" y="7" width="49" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="3gm-iU-cnC"/>
+                        </constraints>
                     </switch>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="Y3L-MH-HQc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="61c-TF-rKx"/>
+                    <constraint firstItem="QI7-Fg-mge" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Ayo-nQ-MJy"/>
+                    <constraint firstAttribute="bottom" secondItem="Y3L-MH-HQc" secondAttribute="bottom" constant="6" id="FGX-CN-rXO"/>
+                    <constraint firstItem="Y3L-MH-HQc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PsT-tF-kzD"/>
+                    <constraint firstAttribute="bottom" secondItem="QI7-Fg-mge" secondAttribute="bottom" constant="6" id="fVc-LD-fhR"/>
+                    <constraint firstAttribute="trailing" secondItem="QI7-Fg-mge" secondAttribute="trailing" constant="16" id="nAD-0Z-jhG"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Y3L-MH-HQc" secondAttribute="trailing" constant="230" id="391-qu-eYK"/>
+                <constraint firstItem="QI7-Fg-mge" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="257" id="6UU-6t-gpA"/>
+            </constraints>
             <connections>
                 <outlet property="remindLbl" destination="Y3L-MH-HQc" id="rWI-qe-soN"/>
                 <outlet property="remindSth" destination="QI7-Fg-mge" id="w9i-fw-eOb"/>

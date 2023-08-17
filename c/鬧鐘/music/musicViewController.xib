@@ -19,14 +19,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LdA-o6-imD">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LdA-o6-imD">
                     <rect key="frame" x="20" y="75" width="374" height="787"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="787" id="0oM-dH-GeO"/>
+                    </constraints>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LdA-o6-imD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="31" id="7VH-po-IZs"/>
+                <constraint firstItem="LdA-o6-imD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZcR-EW-iBN"/>
+                <constraint firstItem="LdA-o6-imD" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="lf5-ns-1cA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LdA-o6-imD" secondAttribute="trailing" constant="20" id="tb0-wb-H79"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
         </view>
     </objects>

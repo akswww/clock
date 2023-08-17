@@ -16,23 +16,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLc-zK-5hw">
-                        <rect key="frame" x="16" y="12" width="54" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-71-0m5">
+                        <rect key="frame" x="78" y="0.0" width="242" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="fNA-Zp-JdT"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-71-0m5">
-                        <rect key="frame" x="78" y="11" width="226" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLc-zK-5hw">
+                        <rect key="frame" x="16" y="0.0" width="54" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="9BO-gn-QGp"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="mLc-zK-5hw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="67A-7o-Qs5"/>
+                    <constraint firstItem="mLc-zK-5hw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AFJ-89-j0l"/>
+                    <constraint firstItem="dgr-71-0m5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZOv-5w-Yhj"/>
+                    <constraint firstAttribute="bottom" secondItem="mLc-zK-5hw" secondAttribute="bottom" id="b1Y-Fl-Y4W"/>
+                    <constraint firstAttribute="bottom" secondItem="dgr-71-0m5" secondAttribute="bottom" id="sNU-6B-ihc"/>
+                    <constraint firstAttribute="trailing" secondItem="dgr-71-0m5" secondAttribute="trailing" id="vvP-NA-WFl"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="mLc-zK-5hw" secondAttribute="trailing" constant="250" id="RU9-cW-Ksq"/>
+                <constraint firstItem="dgr-71-0m5" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="78" id="grw-Lg-vSk"/>
+            </constraints>
             <connections>
                 <outlet property="repectLbl" destination="mLc-zK-5hw" id="oMI-pL-C38"/>
                 <outlet property="showdata" destination="dgr-71-0m5" id="WhY-QJ-6Yu"/>
